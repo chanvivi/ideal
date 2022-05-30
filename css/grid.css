@@ -1,0 +1,172 @@
+/* ----------------------手機------------------------- */
+
+@media screen and (max-width:768px) {
+
+    /* -----------------------首頁------------------------- */
+    /* --Rose Story-- */
+    .ad .wrap {
+        position: relative;
+    }
+
+    /* 廣告圖大小控制 */
+    .ad .img_box {
+        width: 1200px;
+    }
+
+    /* 照片 */
+    .ad .img_box img {
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    .ad h1 {
+        font-size: 35px;
+        background-color: rgb(238, 212, 222);
+        opacity: 0.8;
+    }
+
+    /* 隱藏標題內文字 */
+    .ad p {
+        display: none;
+    }
+
+    /* 隱藏按鈕 */
+    .ad .own {
+        display: none;
+    }
+    .ad .txt_box {
+        content: '';
+        position: absolute;
+        left:0;
+        top: 0;
+        /* float: inherit; */
+        transform:translate(50%,50%);
+    }
+
+    /* --top按鍵-- */
+    .top {
+        padding-top: 100px;
+        padding-left: 80%;
+        margin: auto;
+        position: fixed;
+    }
+
+    .top img {
+        width: 40px;
+    }
+
+    /* --玫瑰商品-- */
+
+    /* 第一類商品 */
+
+    /* 第二類商品 */
+
+    /*-- 婚禮花藝 --*/
+
+    /* 外殼大小 */
+
+    /* 照片 */
+
+
+    /* --客製花束--*/
+
+    /* 客製(一) */
+
+
+    /* 客製(二) */
+    .own .item {
+        display: none;
+    }
+
+    /* -----------------------關於我們------------------------- */
+
+    /* -- 廣告 -- */
+
+    .story {
+        width: 100%;
+    }
+
+    /* 右邊照片 */
+    .story .wrap {
+        margin: 2.5%;
+        padding: 20px 12.5% 25%;
+    }
+
+    .story img {
+        width: 34%;
+    }
+
+    /* 文字部分 */
+    /* 灰色圖 */
+    .story .text {
+        background-color: lightgray;
+        border-radius: 50% 50%;
+        width: 1px;
+        height: 200px;
+        margin-right: 30px;
+        margin-left: 0px;
+    }
+
+    /* 關於我們-標題 */
+    .story h2 {
+        border: 1px solid rgb(156, 135, 135);
+    }
+
+    /* 文字消失 */
+    .story p {
+        display: none;
+    }
+
+    .story .pic {
+        margin: auto;
+        width: 80%;
+    }
+
+    /* -- 介紹 -- */
+    .story .about {}
+
+    .story .about img {
+        width: 50%;
+    }
+
+    /* -----------------------婚禮花藝------------------------- */
+    .video {
+        width: 100%;
+        width: 1200px;
+    }
+
+    .video .text {
+        padding: 30px;
+    }
+
+    /* -----------------------玫瑰------------------------- */
+    .product .box img {
+        height: 100%;
+        width: 20%;
+    }
+
+    .product .star img {
+        width: 5%;
+    }
+}
+
+/* ----------------------平板------------------------- */
+@media screen and (min-width:768px) {
+
+    /* -----------------------首頁------------------------- */
+    .main-header .span.a {}
+
+    /* --Rose Story-- */
+
+    /* --玫瑰商品-- */
+
+    /* 第二類商品 */
+    .service .wrap {
+        margin: 100px;
+
+    }
+
+    .service .wrap .box {
+        margin: 100px;
+    }
+}

@@ -1,0 +1,98 @@
+/* -------------------------導覽列--手機----------------------- */
+@media screen and (max-width:767px) {
+    /* 漢堡導覽列 */
+    .hb {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin: auto;
+        margin-left: 20%;
+
+    }
+
+    .hb:before,
+    .hb:after {
+        content: '';
+        position: absolute;
+        width: 80%;
+        height: 4px;
+        background-color: rgb(92, 92, 87);
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform:rotate(0deg);
+        border-radius: 50px;
+    }
+
+    .hb:before {
+        top: 5px;
+        box-shadow: 0px 13px 0px rgb(92, 92, 87);
+        transition: box-shadow .3s .6s,
+            top .3s .3s,
+            transform .3s .0s;
+    }
+
+    .hb:after {
+        bottom: 5px;
+        transition: bottom .3s .3s,
+            transform .3s 0s;
+    }
+
+    #menu-check:checked~.main-header .hb:before {
+        top: 18px;
+        box-shadow: 0px 13px 0px #ff00;
+        transform: rotate(45deg);
+        transition: box-shadow .3s 0s,
+            top .3s .3s,
+            transform .3s .6s;
+    }
+
+    #menu-check:checked~.main-header .hb:after {
+        bottom: 18px;
+        transform: rotate(-45deg);
+        transition: bottom .3s .3s,
+            transform .3s .6s;
+    }
+
+    .main-nav {
+        /* 這裡只有手機需要 */
+        position: absolute;
+        width: 90%;
+        top: 100%;
+        /* 調整往哪裡滑進來，但重點是要讓他先完全出去，不然當它opacity:0,還是會點到它 */
+        left:-90%;
+        opacity: 0;
+        background-color: whitesmoke;
+        /* 讓它有滑出效果慢慢淡出 */
+        transition: 1s;
+    }
+
+    #menu-check:checked~.main-header .main-nav {
+        opacity: 1;
+        left: 0;
+        transition: 1s;
+    }
+
+    .main-nav a {
+        display: block;
+    }
+
+    .main-header a+a {
+        border-top: 1px solid rgb(190, 182, 186);
+    }
+
+    /* foot */
+    .foot {
+        margin: auto;
+    }
+
+    .foot img {
+        width: 30%;
+    }
+
+    .foot .wrap {
+        flex-wrap:nowrap;
+        margin: auto;
+        cursor: default;
+    }
+}

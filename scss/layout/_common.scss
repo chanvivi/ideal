@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500&family=Poppins:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// 文字規範
+body {
+    /* 字體 : 中文-Noto Sans TC | 英文-Poppins */
+    font-family: 'Poppins', sans-serif, 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    box-sizing: border-box;
+    list-style: none;
+    background-color: var(--bgc-pink);
+}
+a{
+    display: block;
+}
+
+img{
+    width: 100%;
+}
+
+// 全區css
+:root {
+    // *顏色*//
+
+    // 按鈕
+    --button-primary: #eed4de; //var(--button-primary)
+    --button-secondary: #8694a8; //var(--button-secondary)
+
+    //網頁
+    --primary-color: #ffffff; //var(--primary-color)
+    --secondary-color: #ffdad4bf; //var(--secondary-color)
+    // --icon-color: #F1F1F1;          //var(--icon-color)
+    // 字體
+    --font-primary: #5E5E5E; //var(--font-primary)
+    --font-secondary: #A3A3A3;
+    --h1-color: #9b9898; //var(--h1-color)
+    --h4-color:#ece6e6//var(--h4-color)
+
+    // 背景
+    --bgc-pink: #e9e9e9; //var(--bgc-pink)
+    --foot-bule:#272e3a; //var(foot-bule)
+
+    /* 字體大小 */
+
+    // 標題
+    --title: 40px; //var(--title)
+    --title1: 30px; //var(--title1)
+    --title2: 20px; //var(--title2)
+
+    // 內文
+    --body1: 16px; //var(--body1)
+    --body2: 14px; //var(--body2)
+    --tag: 12px; //var(--tag)
+
+    // 按鈕
+    --btn-font: 14px; //var(--btn-font)
+
+    /* 字體粗細 */
+    --thin: 100; //var(--thin)
+    //300為預設值,不用特別寫
+    --bold: 500; //var(--bold)
+
+    /* 圖片/背景的圓角 */
+    --img-radius: 12px; //var(--img-radius)
+    --bgc-radius: 15px; //var(--bgc-radius)
+
+    // 陰影
+    --box-shadow: 1px 1px 10px rgba(102, 98, 98, 0.2); //var(--box-shadow)
+    --btn--transition: 00.5s; //var(--btn--transition)
+}
+
+/* ==========按鈕可共用的class ==========*/
+
+.btn-primary { //粉底白字
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    letter-spacing: .05em;
+    border-radius: .75em;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--button-primary);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+    padding: 5px 13px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: var(--button-primary);
+    background-color: var(--primary-color);
+    outline: 1px solid var(--button-primary);
+    transition:var(--btn--transition);
+}
+
+.btn-secondary { //藍底白字
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
+    letter-spacing: .05em;
+    border-radius: .75em;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--button-secondary);
+    box-shadow: var(--box-shadow);
+    border: none;
+    outline: none;
+    padding: 5px 13px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    color: var(--button-secondary);
+    background-color: var(--primary-color);
+    outline: 1px solid var(--button-secondary);
+    transition:var(--btn--transition);
+}

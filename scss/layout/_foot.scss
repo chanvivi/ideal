@@ -1,0 +1,45 @@
+/*-------------------- 底下資訊---fooot-------------------- */
+.foot {
+    background-color: var(foot-bule);
+    .wrap {
+        display: flex;
+        margin: auto;
+        padding: 30px;
+        justify-content: space-around;
+        cursor: default;
+
+        .box {
+            width: 300px;
+            text-align: center;
+        }
+
+        .pic {
+            .paypal {
+                display: flex;
+                img {
+                    margin: auto;
+                    width: 200px;
+                    display: flex;
+                }
+            }
+            .pay{
+                display: flex;
+                img{
+                    margin: auto;
+                    width: 50px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+.foot h4 {
+    // color:var(--h4-color);
+}
+
+.foot p {
+    // color:var(--h4-color);
+    padding: 10px;
+    line-height: 30px;
+}
